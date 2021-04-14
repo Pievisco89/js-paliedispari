@@ -9,6 +9,11 @@ console.log(numero_utente);
 console.log(numero_computer);
 console.log(numero_utente + numero_computer);
 
+if(check_pari(somma)) {
+  console.log("La somma è pari")
+} else {
+  console.log("La somma è dispari")
+}
 
 /* creo numero random da 1 a 5 per computer con funzione */
 function numero_generator(limit){
@@ -19,11 +24,10 @@ function numero_generator(limit){
 }
 
 /* funzione per stabilire se il num è pari o dispari */
-function pari(numero){
+function check_pari(numero){
   if(numero % 2 === 0){
-    var res
+    return true
   } else {
-    var res
+    return false
   }
-  return res;
 }
