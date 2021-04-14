@@ -7,13 +7,14 @@ var somma = numero_utente + numero_computer;
 console.log(scelta_utente);
 console.log(numero_utente);
 console.log(numero_computer);
-console.log(numero_utente + numero_computer);
+console.log(somma);
 
+/* condizione per stabilire se la somma dei numeri è pari o dispari tramite funzione */
 if(check_pari(somma)) {
-  console.log("La somma è pari")
+  console.log("La somma è pari!");
 } else {
-  console.log("La somma è dispari")
-}
+  console.log("La somma è dispari!");
+} 
 
 /* creo numero random da 1 a 5 per computer con funzione */
 function numero_generator(limit){
