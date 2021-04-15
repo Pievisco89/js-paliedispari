@@ -9,12 +9,16 @@ console.log(numero_utente);
 console.log(numero_computer);
 console.log(somma);
 
-/* condizione per stabilire se la somma dei numeri è pari o dispari tramite funzione */
-if(check_pari(somma)) {
-  console.log("La somma è pari!");
+/* condizione per stabilire vincitore */
+if(check_pari(somma)=== true && scelta_utente === "Pari") {
+  console.log("La somma è pari! Hai Vinto!");
+} else if(check_pari(somma)=== true && scelta_utente === "Dispari") {
+  console.log("La somma è pari! Hai perso! Computer vince!");
+} else if (check_pari(somma)=== false && scelta_utente === "Pari"){
+  console.log("La somma è dispari! Hai perso! Computer vince!");
 } else {
-  console.log("La somma è dispari!");
-} 
+  console.log("La somma è dispari! Hai Vinto!");
+}
 
 /* creo numero random da 1 a 5 per computer con funzione */
 function numero_generator(limit){
